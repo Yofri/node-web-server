@@ -1,0 +1,16 @@
+{
+  "name": "node-web-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server -e js,hbs"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
