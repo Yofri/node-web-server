@@ -39,6 +39,13 @@ app.get('/about', (request, response) => {
   });
 });
 
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {
+    pageTitle: 'Portfolio page',
+    currentYear: new Date().getFullYear()
+  });
+});
+
 app.get('/bad', (request, response) => {
   response.send({
     error: 'Unable to handle request.'
